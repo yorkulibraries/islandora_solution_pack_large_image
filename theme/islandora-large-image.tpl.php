@@ -21,6 +21,11 @@
  * @see theme_islandora_large_image()
  */
 ?>
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:site" content="@YUDLbot" />
+<meta name="twitter:title" content="<?php print ("{$islandora_object->label}"); ?>" />
+<meta property="og:url" content="https://digital.library.yorku.ca/<?php print ("islandora/object/{$islandora_object->id}"); ?>" />
+<meta name="twitter:image" content="https://digital.library.yorku.ca/<?php print ("islandora/object/{$islandora_object->id}/datastream/JPG/view.jpg"); ?>" />
 <div class="islandora-large-image-object islandora" vocab="http://schema.org/" prefix="dcterms: http://purl.org/dc/terms/" typeof="ImageObject">
   <div class="islandora-large-image-content-wrapper clearfix">
     <?php if ($islandora_content): ?>
